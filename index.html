@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的响应式网站 - 首页</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Google Fonts (可选，用于美化字体) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 网站头部区域 -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-logo"><a href="#">我的网站</a></h1>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button> <!-- 汉堡菜单图标 -->
+                <ul class="nav-list">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">产品</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main class="site-main">
+        <section class="hero-section">
+            <div class="container">
+                <h2>欢迎来到我们的网站</h2>
+                <p>我们致力于提供卓越的服务和创新的解决方案。</p>
+                <a href="#" class="btn">了解更多</a>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h3>我们的特色</h3>
+                <div class="feature-grid">
+                    <article class="feature-item">
+                        <h4>专业服务</h4>
+                        <p>我们拥有经验丰富的团队，提供专业的定制服务。</p>
+                    </article>
+                    <article class="feature-item">
+                        <h4>创新技术</h4>
+                        <p>紧跟行业前沿，运用最新技术，打造高效解决方案。</p>
+                    </article>
+                    <article class="feature-item">
+                        <h4>客户至上</h4>
+                        <p>始终将客户需求放在首位，提供满意的售后支持。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us-section">
+            <div class="container content-sidebar-layout">
+                <div class="main-content">
+                    <h3>关于我们</h3>
+                    <p>我们是一家充满活力的公司，专注于[您的行业/领域]。自成立以来，我们始终秉持着[您的核心价值观]的理念，为客户提供[您的主要产品/服务]。</p>
+                    <p>我们的团队由一群充满激情和专业知识的成员组成，他们共同致力于实现卓越。我们相信，通过不懈的努力和持续创新，能够为社会创造更大的价值。</p>
+                </div>
+                <aside class="sidebar">
+                    <h4>最新动态</h4>
+                    <ul>
+                        <li><a href="#">新产品发布！</a></li>
+                        <li><a href="#">参加行业峰会</a></li>
+                        <li><a href="#">客户案例分享</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- 网站页脚区域 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">服务</a></li>
+                        <li><a href="#">产品</a></li>
+                        <li><a href="#">博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <p>地址：您的公司地址</p>
+                    <p>电话：123-4567-890</p>
+                    <p>邮箱：info@yourcompany.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="微信"><img src="https://via.placeholder.com/24/000000/FFFFFF?text=W" alt="微信"></a>
+                        <a href="#" aria-label="微博"><img src="https://via.placeholder.com/24/000000/FFFFFF?text=B" alt="微博"></a>
+                        <!-- 更多社交图标 -->
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 施新强. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript用于处理移动端菜单切换 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+
+            if (menuToggle && navList) {
+                menuToggle.addEventListener('click', function() {
+                    navList.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
